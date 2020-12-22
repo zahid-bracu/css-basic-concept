@@ -5,39 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <style>
-    .red-text {
-        color: red;
-    }
+<style>
 
-    h2 {
-        font-family: Lobster, monospace;
-    }
 
-    p {
-        font-size: 16px;
-        font-family: monospace;
-    }
-
-    .thick-green-border {
-        border-color: green;
-        border-width: 10px;
-        border-style: solid;
-        /* border-radius */
-        border-radius:50%;
-    }
-
-    .smaller-image {
-        width: 100px;
-    }
-
-    .silver-background{
-    background-color:silver;
+  /* background color with id */
+  #cat-photo-form{
+    background:green;
   }
-    </style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
+  }
+</style>
 </head>
 <body>
-    <h2 class="red-text">CatPhotoApp</h2>
+    
+<h2 class="red-text">CatPhotoApp</h2>
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
@@ -58,10 +64,7 @@
     </ol>
   </div>
 
-
-
-  <!-- id selector -->
-  <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
@@ -71,9 +74,5 @@
     <button type="submit">Submit</button>
   </form>
 </main>
-
-
-
-
 </body>
 </html>
