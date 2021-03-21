@@ -1,0 +1,25 @@
+/* global assign */
+:root{
+    --back-color:rgb(106, 238, 106);
+    --text-color:rgb(73, 73, 73);
+}
+
+/* local re-assign  */
+.para{
+    --back-color:rgb(223, 217, 135);
+}
+
+.heading{
+    background-color: var(--back-color);
+
+    /* variable back up color set */
+    color:var(--text-colors, red);
+}
+
+
+/* variable value changes in media queries */
+@media (max-width: 750px) {
+    .para {
+        --back-color:rgb(240, 162, 132);
+    }
+  }

@@ -1,0 +1,201 @@
+
+/*  % example of grid */
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+    grid-auto-rows:minmax(100px, auto);
+}
+
+.wrapper > div{
+    padding: 10px;
+    background-color: rgb(247, 241, 233);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.wrapper > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(231, 231, 231);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+
+
+
+
+/*  fraction example of grid */
+.wrapper-two{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr  1fr;
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+    grid-auto-rows:minmax(100px, auto);
+}
+
+.wrapper-two > div{
+    padding: 10px;
+    background-color: rgb(255, 213, 249);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.wrapper-two > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(253, 250, 201);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+
+
+
+/* repeat fraction example of grid */
+.wrapper-three{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+     
+    grid-auto-rows:minmax(100px, auto);
+}
+
+.wrapper-three > div{
+    padding: 10px;
+    background-color: rgb(173, 243, 255);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.wrapper-three > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(255, 165, 165);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+
+
+
+/* min-max row example of grid */
+.wrapper-four{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+    grid-auto-rows:minmax(100px, auto);
+}
+
+.wrapper-four > div{
+    padding: 10px;
+    background-color: rgb(198, 248, 196);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.wrapper-four > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(255, 209, 227);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+
+
+
+
+/* nested row example of grid */
+.wrapper-five{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+}
+
+.wrapper-five > div{
+    padding: 10px;
+    background-color: rgb(241, 237, 255);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.wrapper-five > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(255, 244, 239);
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1em;
+    
+}
+
+.nested-grid > div{
+    background-color: rgb(255, 224, 224);
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgb(133, 133, 133);
+}
+
+
+
+
+
+
+/*  justify items & justify self */
+.wrapper-six{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+    justify-items: center;
+    
+     
+}
+
+.wrapper-six > div{
+    padding: 10px;
+    background-color: rgb(132, 255, 179);
+    border: 1px solid rgb(66, 66, 66);
+    
+}
+
+.wrapper-six > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(246, 248, 91);
+    border: 1px solid rgb(19, 19, 19);
+    justify-self: end;
+}
+
+
+
+
+
+/*  align items & Align-self*/
+.wrapper-seven{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: .5em ;
+    grid-row-gap:.5em;
+    grid-auto-rows: minmax(200px, auto);
+    color: antiquewhite;
+    font-weight: 700;
+    align-items: flex-start;
+     
+}
+
+.wrapper-seven > div{
+    padding: 10px;
+    background-color: rgb(245, 181, 181);
+    border: 1px solid rgba(44, 44, 44, 0.562);
+    
+}
+
+.wrapper-seven > div:nth-child(odd){
+    padding: 10px;
+    background-color:rgb(91, 248, 99);
+    border: 1px solid rgb(10, 10, 10);
+    align-self:end;
+}
+
+
+/* Align Self */
