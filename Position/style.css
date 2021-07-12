@@ -83,3 +83,22 @@ header{
  position: sticky;
  top: 0px;
 }
+
+
+
+.bigger-box-two{
+    border : 1px solid rgb(49, 49, 49);
+ width: 50%;
+ display: block;
+ margin: auto;
+ height: 900px;
+ background-color:rgb(231, 138, 126);
+ position: relative;
+}
+
+.inner-box-two{
+    background-color: rgb(81, 255, 0);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
